@@ -1,11 +1,13 @@
 ---
+const thisYear = new Date().getFullYear();
 ---
 
-<footer class='grid'>
-    <p class='text-center text-semibold'>
-        Siden er bygget av <a
+<footer class='p-4 grid place-content-center text-center bg-yellow-800 text-amber-100'>
+    <p>{thisYear} &copy; Bryggekanten Forlag</p>
+    <p>
+        Nettsiden er laget av <a
             href='https://aolar.no'
-            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+            class='underline hover:text-yellow-300 dark:text-indigo-100 dark:hover:text-indigo-300'
             >Aolar.no</a
         >
     </p>
