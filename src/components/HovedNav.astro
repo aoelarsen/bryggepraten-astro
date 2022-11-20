@@ -121,6 +121,24 @@ const currentPath = pathname.slice(1);
                                 </a>
                             )
                         }
+                        {
+                            currentPath === 'nicaragua-prosjektet' ? (
+                                <a
+                                    href='/nicaragua-prosjektet'
+                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    aria-current='page'
+                                >
+                                    Nicaragua-prosjektet
+                                </a>
+                            ) : (
+                                <a
+                                    href='/nicaragua-prosjektet'
+                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                >
+                                    Nicaragua-prosjektet
+                                </a>
+                            )
+                        }
                     </div>
                 </div>
             </div>
@@ -185,6 +203,24 @@ const currentPath = pathname.slice(1);
                         class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
                     >
                         Utgivelser
+                    </a>
+                )
+            }
+            {
+                currentPath === 'nicaragua-prosjektet' ? (
+                    <a
+                        href='/nicaragua-prosjektet'
+                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        aria-current='page'
+                    >
+                        Nicaragua-prosjektet
+                    </a>
+                ) : (
+                    <a
+                        href='/nicaragua-prosjektet'
+                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                    >
+                        Nicaragua-prosjektet
                     </a>
                 )
             }
