@@ -1,14 +1,18 @@
 ---
+import paBrygga from '../images/paa_brygga_v1.png';
 const thisYear = new Date().getFullYear();
 ---
 
-<footer class='p-4 grid place-content-center text-center bg-yellow-800 text-amber-100'>
-    <p>{thisYear} &copy; Bryggekanten Forlag</p>
-    <p>
-        Nettsiden er laget av <a
-            href='https://aolar.no'
-            class='underline hover:text-yellow-300 dark:text-indigo-100 dark:hover:text-indigo-300'
-            >Aolar.no</a
-        >
-    </p>
+<footer class='p-4 grid grid-col-2 place-content-center text-center bg-yellow-700 text-amber-100'>
+    <div>
+        <p>{thisYear} &copy; Bryggekanten Forlag</p>
+        <p>
+            Nettsiden er laget av <a
+                href='https://aolar.no'
+                class='underline hover:text-yellow-300 dark:text-indigo-100 dark:hover:text-indigo-300'
+                >Aolar.no</a
+            >
+        </p>
+    </div>
+    <img src={paBrygga} alt='gutta på brygga' />
 </footer>
