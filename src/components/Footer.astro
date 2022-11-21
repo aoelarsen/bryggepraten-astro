@@ -1,10 +1,19 @@
 ---
 import paBrygga from '../images/paa_brygga_v1.png';
+import { Image } from '@astrojs/image/components';
 const thisYear = new Date().getFullYear();
 ---
 
-<footer class='p-4 grid grid-col-2 place-content-center text-center bg-yellow-700 text-amber-100'>
-    <div>
+<footer
+    class='p-4 mt-24 grid md:grid-cols-2 place-content-center text-center bg-yellow-600 text-amber-100 relative'
+>
+    <Image
+        src={paBrygga}
+        alt='gutta på brygga'
+        format='png'
+        class='absolute md:right-0 bottom-full'
+    />
+    <div class='place-self-center'>
         <p>{thisYear} &copy; Bryggekanten Forlag</p>
         <p>
             Nettsiden er laget av <a
@@ -14,5 +23,4 @@ const thisYear = new Date().getFullYear();
             >
         </p>
     </div>
-    <img src={paBrygga} alt='gutta på brygga' />
 </footer>
