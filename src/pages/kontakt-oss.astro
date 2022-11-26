@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { Image } from '@astrojs/image/components';
+---
+
+<Layout title='Kontakt Oss'>
+    <main class='p-4 mx-auto max-w-2xl'>
+        <h2>Kontakt oss</h2>
+        <figure>
+            <Image
+                format='jpg'
+                src='https://www.bryggepraten.no/wp-content/uploads/2019/03/Untitled-2_bak-1024x520.jpg'
+                alt='en tegning av forfatterne bak Bryggepraten, Birger Dyve larsen og Jørund Holst-Hansen'
+                width='1024'
+                height='520'
+            />
+            <figcaption>
+                <p>
+                    Forfattere er Jørund Holst-Hansen og Birger Dyve Larsen. De skriver alle tekster
+                    sammen og begge to tegner.
+                </p>
+            </figcaption>
+        </figure>
+        <section class='py-8'>
+            <h3 class='font-bold'>Jørund Holst-Hansen</h3>
+            <p>Har en helt egen nettside med mer skriblerier og han kan også kontaktes pr epost!</p>
+            <ul class='list-disc list-inside'>
+                <li>
+                    <a
+                        href='http://www.jhhnett.com/'
+                        class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+                        >JØRUND hh - jhhnett.com</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href='email:holst.hansen1952@gmail.com'
+                        class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+                        >holst.hansen1952@gmail.com</a
+                    >
+                </li>
+            </ul>
+        </section>
+
+        <section class='py-8'>
+            <h3 class='font-bold'>Birger Dyve Larsen</h3>
+            <p>Har også mer skriblerier og sånn og kan kontaktes pr epost!</p>
+            <ul class='list-disc list-inside'>
+                <li>
+                    <a
+                        href='https://baglerlarsen.net'
+                        class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+                        >Baglerlarsen.net</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href='email:birgerdl@yahoo.no'
+                        class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+                        >birgerdl@yahoo.no</a
+                    >
+                </li>
+            </ul>
+        </section>
+
+        <section class='py-4'>
+            <h3 class='font-bold text-lg md:text-2xl'>Kontaktskjema</h3>
+            <ContactForm />
+        </section>
+    </main>
+</Layout>
