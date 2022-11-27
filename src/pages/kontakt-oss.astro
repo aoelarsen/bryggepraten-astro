@@ -2,16 +2,22 @@
 import Layout from '../layouts/Layout.astro';
 import ContactForm from '../components/ContactForm.astro';
 import { Image } from '@astrojs/image/components';
+
+import kontaktSketch from '../images/kontakt-oss-sketch.png';
 ---
 
 <Layout title='Kontakt Oss'>
-    <main class='p-4 mx-auto max-w-2xl'>
-        <section class='grid place-content-center h-screen snap-y snap-mandatory fadeOut'>
+    <main
+        class='p-4 mx-auto max-w-2xl grid grid-cols-1 grid-rows-[repeat(4,minmax(90vh,min-content))] content-center place-content-center'
+    >
+        <section
+            class='grid place-content-center self-start snap-y snap-mandatory fadeOut transition-all duration-1000 delay-75'
+        >
             <h2>Kontakt oss</h2>
             <figure>
                 <Image
-                    format='jpg'
-                    src='https://www.bryggepraten.no/wp-content/uploads/2019/03/Untitled-2_bak-1024x520.jpg'
+                    format='png'
+                    src={kontaktSketch}
                     alt='en tegning av forfatterne bak Bryggepraten, Birger Dyve larsen og Jørund Holst-Hansen'
                     width='1024'
                     height='520'
@@ -24,7 +30,10 @@ import { Image } from '@astrojs/image/components';
                 </figcaption>
             </figure>
         </section>
-        <section class='grid place-content-center h-screen snap-y snap-mandatory fadeOut'>
+
+        <section
+            class='grid place-content-center snap-y snap-mandatory fadeOut transition-all duration-1000 delay-100'
+        >
             <h3 class='font-bold'>Jørund Holst-Hansen</h3>
             <p>Har en helt egen nettside med mer skriblerier og han kan også kontaktes pr epost!</p>
             <ul class='list-disc list-inside'>
@@ -45,7 +54,9 @@ import { Image } from '@astrojs/image/components';
             </ul>
         </section>
 
-        <section class='grid place-content-center h-screen snap-y snap-mandatory fadeOut'>
+        <section
+            class='grid place-content-center snap-y snap-mandatory fadeOut transition-all duration-1000 delay-100'
+        >
             <h3 class='font-bold'>Birger Dyve Larsen</h3>
             <p>Har også mer skriblerier og sånn og kan kontaktes pr epost!</p>
             <ul class='list-disc list-inside'>
@@ -66,44 +77,11 @@ import { Image } from '@astrojs/image/components';
             </ul>
         </section>
 
-        <section class='grid place-content-center h-screen snap-y snap-mandatory fadeOut'>
+        <section
+            class='grid place-content-center snap-y snap-mandatory fadeOut transition-all duration-1000 delay-100'
+        >
             <h3 class='font-bold text-lg md:text-2xl'>Kontaktskjema</h3>
             <ContactForm />
         </section>
     </main>
 </Layout>
-<style>
-    .fadeOut {
-        opacity: 0;
-        filter: blur(5px);
-        transition: all 1.75s;
-        transform: translate(-50%);
-    }
-    .fadeIn {
-        opacity: 1;
-        filter: blur(0);
-        transform: translate(0);
-    }
-
-    @media (prefers-reduced-motion) {
-        .fadeOut {
-            transition: none;
-        }
-    }
-</style>
-
-<script is:inline>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry);
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fadeIn');
-            } else {
-                entry.target.classList.remove('fadeIn');
-            }
-        });
-    });
-
-    const hiddenElements = document.querySelectorAll('.fadeOut');
-    hiddenElements.forEach((el) => observer.observe(el));
-</script>

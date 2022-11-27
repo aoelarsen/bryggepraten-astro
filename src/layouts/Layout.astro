@@ -55,4 +55,42 @@ import Footer from '../components/Footer.astro';
         display: grid;
         grid-template-rows: auto 1fr auto;
     }
+    .fadeOut {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translate(-50%);
+    }
+    .fadeIn {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0);
+    }
+
+    @media (prefers-reduced-motion) {
+        .fadeOut {
+            transition: none;
+        }
+    }
 </style>
+
+<script is:inline>
+    const options = {
+        root: document,
+        rootMargin: '0px',
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fadeIn');
+            } else {
+                entry.target.classList.remove('fadeIn');
+            }
+        });
+    }, options);
+
+    const hiddenElements = document.querySelectorAll('.fadeOut');
+    hiddenElements.forEach((el) => observer.observe(el));
+</script>
