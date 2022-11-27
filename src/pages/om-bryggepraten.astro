@@ -1,11 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from '@astrojs/image/components';
+
+import forlagsherrer from '../images/forlagsherrer.jpg';
+import premierefest from '../images/premierefest-924x1024.jpg';
+import bryggeProfilJuli from '../images/Bryggepraten-profil-juli-20.jpg';
 ---
 
 <Layout title='Om bryggepraten'>
-    <main class='p-4 mx-auto max-w-2xl'>
+    <main class='p-4 mx-auto max-w-2xl grid gap-8'>
         <h2>Om Bryggepraten</h2>
-        <section>
+        <section class='py-4'>
             <h3 class='text-lg font-semibold'>Sandefjords Blad</h3>
             <p>
                 Den gang da Sandefjords Blad ble utgitt (bare) på papir, og da båter fra alle
@@ -14,7 +19,7 @@ import Layout from '../layouts/Layout.astro';
                 stort og smått som skjedde på havna og ved bryggene.
             </p>
         </section>
-        <section>
+        <section class='py-4'>
             <h3 class='text-lg font-semibold'>Høsten 2017</h3>
             <p>
                 ble det blåst nytt liv i denne utmerkede spalte, men den har for så vidt fått et
@@ -25,24 +30,34 @@ import Layout from '../layouts/Layout.astro';
                 De er mer eller mindre saklige, mer eller mindre preget av kunnskap om hva sakene
                 egentlig gjelder, men alltid klare for å la assosiasjonene løpe fritt. Også der hvor
                 disse ser ut til å løpe ut i det lettere absurde. Og hele tiden på et slags nokså
-                fritt sandefjordsmål, ubundet av ortografiske og andre regler. Logo Disse våre to
-                herrer, Hansen og Larsen, har hver sin personlighet, den første noe mer velorientert
-                enn den andre: Mens Larsen kanskje er «den skarpeste skjea i skuffen» er Hansen en
-                smule enklere utstyrt, men de to er gode venner, og hjelper hverandre så godt de kan
-                med å orientere seg i byens og livets mange mysterier.
+                fritt sandefjordsmål, ubundet av ortografiske og andre regler.
+            </p>
+            <figure class='p-2'>
+                <Image
+                    format='jpg'
+                    src={forlagsherrer}
+                    alt='Sketch av to herrer med hatt, grunnleggerne av Bryggepraten og Bryggekanten forlag'
+                />
+            </figure>
+            <p>
+                Disse våre to herrer, Hansen og Larsen, har hver sin personlighet, den første noe
+                mer velorientert enn den andre: Mens Larsen kanskje er «den skarpeste skjea i
+                skuffen» er Hansen en smule enklere utstyrt, men de to er gode venner, og hjelper
+                hverandre så godt de kan med å orientere seg i byens og livets mange mysterier.
             </p>
         </section>
-        <section>
+        <section class='py-4'>
             <h3 class='text-lg font-semibold'>Åpen gruppe på Facebook</h3>
             <p>
                 Hansen og Larsen boltrer seg på Facebook, i den åpne gruppa <a
                     href='https://www.facebook.com/groups/510001752669370/?ref=bookmarks'
+                    class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
                     >«Bryggepraten»</a
                 >, som nå har over 700 medlemmer. Ca 100 av tekstene er også blitt trykket i
                 Sandefjords Blad.
                 <p>Velkommen til Hansens og Larsen forunderlige verden!</p>
                 <p>Forfatternes beskrivelse av Hansen og Larsen:</p>
-                <ul>
+                <ul class='list-disc list-inside'>
                     <li>To friherrer med litt dressur.</li>
                     <li>
                         Overfladisk dypsindige; som Larsen sier: «Det er bare de overfladiske som
@@ -54,13 +69,28 @@ import Layout from '../layouts/Layout.astro';
                     <li>I følge ryktet sa et svensk fruentimmer: «Kjekke, men inte lektuelle.»</li>
                 </ul>
             </p>
+            <figure class='py-4'>
+                <Image src={bryggeProfilJuli} alt='Bryggepraten.no banner' />
+                <figcaption class='font-sm px-2 italic'>
+                    <p>
+                        Forfatterne Jørund Holst-Hansen og Birger Dyve Larsen kom sammen
+                        seinsommeren 2017 og startet Bryggepraten.
+                    </p>
+                </figcaption>
+            </figure>
         </section>
-        <section>
+        <section class='py-4'>
             <h3 class='text-lg font-semibold'>Forfatterne</h3>
             <p>
                 &hellip; ble sett på den rød løper under Bent Hamers førpremiere «The middle man» 4.
                 sep. 2021
             </p>
+            <figure class='p-2'>
+                <Image
+                    src={premierefest}
+                    alt='Forfatterne på remierefest. Den ene peker og begge ser rett inn i kameraet'
+                />
+            </figure>
         </section>
     </main>
 </Layout>

@@ -8,18 +8,13 @@ const thisYear = new Date().getFullYear();
 <footer
     class='p-4 mt-40 grid md:grid-cols-2 place-content-center text-center bg-[#efb261] text-black relative border-t-4 border-black'
 >
-    <Image
-        src={bryggebenken}
-        alt='gutta på brygga'
-        format='png'
-        class='absolute md:right-7 lg:right-0 bottom-full md:bottom-6'
-    />
+    <figure class='absolute md:right-7 lg:right-0 bottom-full md:bottom-6 overflow-hidden'>
+        <Image src={bryggebenken} alt='gutta på brygga' format='png' />
+    </figure>
     <div class='place-self-center z-10'>
         <p>{thisYear} &copy; Bryggekanten Forlag</p>
         <p>
-            Nettsiden er laget av <a
-                href='https://aolar.no'
-                class='underline hover:text-yellow-300 dark:text-indigo-100 dark:hover:text-indigo-300'
+            Nettsiden er laget av <a href='https://aolar.no' class='underline hover:text-yellow-900'
                 >Aolar.no</a
             >
         </p>
