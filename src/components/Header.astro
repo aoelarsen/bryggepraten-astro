@@ -1,11 +1,14 @@
 ---
-import HovedNav from './HovedNav.astro';
+import HovedNav from './navigation/HovedNav.astro';
+import Bokutgivelser from './navigation/Bokutgivelser.astro';
 import { Image } from '@astrojs/image/components';
 
 import forlagsHerrer from '../images/forlagsherrer.jpg';
 ---
 
-<header class='p-5 md:p-7 lg:p-10 grid grid-cols-[auto,1fr,auto] gap-2 md:gap-4'>
+<header
+    class='p-5 md:p-7 lg:p-10 grid grid-cols-[auto,1fr,auto] lg:grid-cols-[auto,1fr,auto,auto] grid-rows-2 md:grid-rows-1 gap-2 md:gap-4'
+>
     <a href='/' class='self-center'>
         <Image src={forlagsHerrer} alt='Logo Bryggepraten forlag' width='100' />
     </a>
@@ -16,4 +19,5 @@ import forlagsHerrer from '../images/forlagsherrer.jpg';
         </a>
     </div>
     <HovedNav />
+    <Bokutgivelser />
 </header>
