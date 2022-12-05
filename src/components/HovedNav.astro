@@ -6,7 +6,7 @@ const currentPath = pathname.slice(1);
 <nav class='justify-self-end'>
     <div class='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
         <div class='flex h-16 items-center justify-between'>
-            <div class='inset-y-0 left-0 flex items-center sm:hidden'>
+            <div class='inset-y-0 left-0 flex items-center lg:hidden'>
                 <!-- Mobile menu button-->
                 <button
                     type='button'
@@ -62,8 +62,11 @@ const currentPath = pathname.slice(1);
                     </svg>
                 </button>
             </div>
-            <div class='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
-                <div class='hidden sm:ml-6 sm:block'>
+
+            <div
+                class='hidden lg:flex flex-1 items-center justify-center lg:items-stretch lg:justify-start'
+            >
+                <div class='hidden lg:ml-6 lg:block'>
                     <div class='flex space-x-4'>
                         {
                             currentPath === '' ? (
@@ -164,7 +167,7 @@ const currentPath = pathname.slice(1);
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class='hidden relative h-min md:hidden' id='mobileMenu'>
+    <div class='hidden relative h-min lg:hidden' id='mobileMenu'>
         <div
             class='absolute right-[5vw] w-[80vw] h-min flex flex-col gap-2 bg-blue-50 dark:bg-blue-900 space-y-1 px-2 pt-2 pb-3 border-blue-800 rounded-sm'
         >
