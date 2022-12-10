@@ -7,7 +7,7 @@
         "forfattere": ["Birger Dyve Larsen", "Jørund Holst-Hansen"],
         "utgivelsesdato": "",
         "pris": "200",
-        "status": ""        
+        "status": "få eksemplarer igjen"        
       },
       {
         "tittel": "Denne Fuglen Har Fløyet",
@@ -50,6 +50,9 @@
         "pris": "200",
         "status":""
       }
+    ],
+    "andre utgivelser": [
+      
     ]
 }
 }
