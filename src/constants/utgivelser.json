@@ -1,0 +1,55 @@
+{
+  "utgivelser": {  
+    "bøker": [
+      {
+        "tittel": "Bryggepraten Boka",
+        "sjanger": "",
+        "forfattere": ["Birger Dyve Larsen", "Jørund Holst-Hansen"],
+        "utgivelsesdato": "",
+        "pris": "200",
+        "status": ""        
+      },
+      {
+        "tittel": "Denne Fuglen Har Fløyet",
+        "sjanger": "",
+        "forfattere": ["Birger Dyve Larsen", "Jørund Holst-Hansen"],
+        "utgivelsesdato": "",
+        "pris": "250",
+        "status": ""
+      },
+      {
+        "tittel": "Bryggepratens Hånbok - Veiene Inn",
+        "sjanger": "",
+        "forfattere": ["Birger Dyve Larsen", "Jørund Holst-Hansen"],
+        "utgivelsesdato": "",
+        "pris": "250",
+        "status": ""
+      },
+      {
+        "tittel": "Liv Og Leven På Karia",
+        "sjanger": "",
+        "forfattere": ["Øyvind Børresen"],
+        "utgivelsesdato": "",
+        "pris": "200",
+        "status": ""
+      },
+      {
+        "tittel": "Dribble",
+        "sjanger": "",
+        "forfattere": ["Åshild Thunes"],
+        "utgivelsesdato": "",
+        "pris": "",
+        "status": ""
+      }
+    ],
+    "kalendere": [
+      {
+        "tittel": "Kunstkalender",
+        "tilvirkere": ["Birger Dyve Larsen", "Jørund Holst-Hansen"],
+        "utgivelsesdato": "",
+        "pris": "200",
+        "status":""
+      }
+    ]
+}
+}
