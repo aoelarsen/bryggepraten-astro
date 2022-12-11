@@ -1,6 +1,6 @@
 {
   "utgivelser": {  
-    "bøker": [
+    "bokutgivelser": [
       {
         "tittel": "Bryggepraten Boka",
         "sjanger": "",
@@ -51,7 +51,7 @@
         "status":""
       }
     ],
-    "andre utgivelser": [
+    "andre_utgivelser": [
       
     ]
 }
