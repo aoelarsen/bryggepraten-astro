@@ -68,7 +68,7 @@ const currentPath = pathname.slice(1);
                             currentPath === '' ? (
                                 <a
                                     href='/'
-                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                                     aria-current='page'
                                 >
                                     Hjem
@@ -76,7 +76,7 @@ const currentPath = pathname.slice(1);
                             ) : (
                                 <a
                                     href='/'
-                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                                 >
                                     Hjem
                                 </a>
@@ -87,7 +87,7 @@ const currentPath = pathname.slice(1);
                             currentPath === 'om-bryggepraten' ? (
                                 <a
                                     href='/om-bryggepraten'
-                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                                     aria-current='page'
                                 >
                                     Om Bryggepraten
@@ -95,7 +95,7 @@ const currentPath = pathname.slice(1);
                             ) : (
                                 <a
                                     href='/om-bryggepraten'
-                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                                 >
                                     Om Bryggepraten
                                 </a>
@@ -105,7 +105,7 @@ const currentPath = pathname.slice(1);
                             currentPath === 'nicaragua-prosjektet' ? (
                                 <a
                                     href='/nicaragua-prosjektet'
-                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                                     aria-current='page'
                                 >
                                     Nicaragua-prosjektet
@@ -113,7 +113,7 @@ const currentPath = pathname.slice(1);
                             ) : (
                                 <a
                                     href='/nicaragua-prosjektet'
-                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                                 >
                                     Nicaragua-prosjektet
                                 </a>
@@ -123,7 +123,7 @@ const currentPath = pathname.slice(1);
                             currentPath === 'kontakt-oss' ? (
                                 <a
                                     href='/kontakt-oss'
-                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                                     aria-current='page'
                                 >
                                     Kontakt Oss
@@ -131,7 +131,7 @@ const currentPath = pathname.slice(1);
                             ) : (
                                 <a
                                     href='/kontakt-oss'
-                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                                    class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                                 >
                                     Kontakt Oss
                                 </a>
@@ -144,15 +144,16 @@ const currentPath = pathname.slice(1);
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
+
     <div class='hidden relative h-min lg:hidden' id='mobileMenu'>
         <div
-            class='absolute right-[5vw] w-[80vw] h-min flex flex-col gap-2 bg-blue-50 dark:bg-blue-900 space-y-1 px-2 pt-2 pb-3 border-blue-800 rounded-sm'
+            class='absolute right-[-2.5vw] w-[95vw] md:w-[50vw] h-min flex flex-col gap-2 rounded-sm bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-blue-900 space-y-1 px-2 pt-2 pb-3 border-blue-800'
         >
             {
                 currentPath === '' ? (
                     <a
                         href='/'
-                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                         aria-current='page'
                     >
                         Hjem
@@ -160,7 +161,7 @@ const currentPath = pathname.slice(1);
                 ) : (
                     <a
                         href='/'
-                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                     >
                         Hjem
                     </a>
@@ -171,7 +172,7 @@ const currentPath = pathname.slice(1);
                 currentPath === 'om-bryggepraten' ? (
                     <a
                         href='/om-bryggepraten'
-                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                         aria-current='page'
                     >
                         Om Bryggepraten
@@ -179,7 +180,7 @@ const currentPath = pathname.slice(1);
                 ) : (
                     <a
                         href='/om-bryggepraten'
-                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                     >
                         Om Bryggepraten
                     </a>
@@ -189,7 +190,7 @@ const currentPath = pathname.slice(1);
                 currentPath === 'nicaragua-prosjektet' ? (
                     <a
                         href='/nicaragua-prosjektet'
-                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                         aria-current='page'
                     >
                         Nicaragua-prosjektet
@@ -197,7 +198,7 @@ const currentPath = pathname.slice(1);
                 ) : (
                     <a
                         href='/nicaragua-prosjektet'
-                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                     >
                         Nicaragua-prosjektet
                     </a>
@@ -207,7 +208,7 @@ const currentPath = pathname.slice(1);
                 currentPath === 'kontakt-oss' ? (
                     <a
                         href='/kontakt-oss'
-                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        class='bg-gray-900 text-white px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                         aria-current='page'
                     >
                         Kontakt Oss
@@ -215,7 +216,7 @@ const currentPath = pathname.slice(1);
                 ) : (
                     <a
                         href='/kontakt-oss'
-                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300'
+                        class='text-blue-600 hover:text-blue-200 focus:text-blue-800 hover:bg-gray-700  px-3 py-2 rounded-sm text-sm font-medium dark:text-blue-200 dark:hover:text-blue-300 dark:focus:text-blue-300 active:text-white'
                     >
                         Kontakt Oss
                     </a>
