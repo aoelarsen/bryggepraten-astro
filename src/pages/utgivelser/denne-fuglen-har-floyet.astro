@@ -1,16 +1,35 @@
 ---
+import { Image } from '@astrojs/image/components';
 import Layout from '../../layouts/Layout.astro';
+import fuglenOmslag from '../../images/bokomslag/fuglenOmslag.png';
 ---
 
 <Layout title='Denne fuglen har fløyet'>
     <main class='p-4 mx-auto max-w-2xl grid gap-8 mb-8'>
-        <div class='px-4 py-2'>
-            <h2 class='text-2xl'>Denne fuglen har fløyet</h2>
-            <p class='font-semibold'>I salg fortsatt! Bestill den her.</p>
-        </div>
-        <figure class='p-4 rounded-sm'>
+        <h2 class='text-xl md:text-3xl'>Denne fuglen har fløyet</h2>
+        <figure class='grid'>
+            <Image
+                format='png'
+                src={fuglenOmslag}
+                alt='bokomslaget til Denne Fuglen Har Fløyet'
+                class='place-self-center'
+            />
+            <figcaption class='italic'>Bryggepratens krimbok i salg fortsatt!</figcaption>
+        </figure>
+        <p>
+            Etter braksuksessen med sin første bok Bryggepraten, har forfatterne sendt de voksne
+            ”Hardy-guttene” ut for å løse en krimgåte. Det meste av Jahres formue er kjent, men
+            denne historien gir helt andre dimensjoner til uttrykket formue. Hadde virkelig Jahre
+            kommet over en av verdens mest ettertraktede skatter? Hansen og Larsen må ut på en
+            farefull ferd for å finne løsningen. Dette kan være en umusikalsk bok for borgerne av
+            Anders Jahres hjemby.
+        </p>
+
+        <aside
+            class='p-2 my-8 border border-slate-100 bg-white rounded-sm drop-shadow-lg leading-loose'
+        >
             <blockquote>
-                <h2 class='font-bold'>Anmeldelse av boka av T. Songedal</h2>
+                <h2 class='font-bold'>Bokanmeldelse av T. Songedal</h2>
                 <p>
                     Jeg koste meg med denne boka. Jørund Holst-Hansen og Birger Dyve Larsen leker
                     som vi er vant til i &rdquo;Bryggepraten&rdquo;, både med karakterene, språket,
@@ -42,7 +61,7 @@ import Layout from '../../layouts/Layout.astro';
                     gjorde at jeg koste meg.
                 </p>
             </blockquote>
-        </figure>
+        </aside>
 
         <figure class='p-4'>
             <iframe

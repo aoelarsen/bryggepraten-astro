@@ -12,16 +12,18 @@ import larsen from '../images/L.png';
 <Layout title='Bryggepraten.no'>
     <main class='p-4 mx-auto max-w-2xl grid gap-8'>
         <h2 class='text-center md:text-3xl'>Velkommen til Bryggepraten!</h2>
-        <section class='grid md:grid-cols-3'>
+        <section class='grid md:grid-cols-3 my-8'>
             <figure class='hidden md:block'>
                 <Image src={larsen} alt='Tegnig av Larsen' format='png' />
             </figure>
-            <div class=''>
-                <h3 class='font-semibold text-center'>Hansens og Larsen forunderlige verden</h3>
+            <div class='flex flex-col justify-center'>
                 <figure class='md:hidden'>
                     <Image src={hansenLarsen} alt='tegning av Hansen og Larsen' format='png' />
                 </figure>
-                <p class='py-12'>
+                <h3 class='py-4 font-semibold text-center md:text-right md:text-3xl'>
+                    Hansens og Larsens forunderlige verden
+                </h3>
+                <p class='py-12 px-2 md:px-0 text-'>
                     Her finner du også informasjon Bryggekanten forlag; et forlag som har gitt ut
                     blant annet Bryggekanten bøkene
                 </p>
@@ -30,47 +32,6 @@ import larsen from '../images/L.png';
                 <Image src={hansen} alt='Tegnig av Hansen' format='png' />
             </figure>
         </section>
-        <!-- <section class='w-full'>
-                <h3 class='text-xl'>Utgivelser</h3>
-
-                <ul class='list-decimal list-inside'>
-                    <li>
-                        <a
-                            href='/utgivelser/bryggepraten-boka'
-                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                            >Bryggepraten boka</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href='/utgivelser/denne-fuglen-har-floyet'
-                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                            >Denne Fuglen Har Fløyet</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href='/utgivelser/veiene-inn'
-                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                            >Bryggepratens Håndbok &hyphen; Veiene Inn</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href='/utgivelser/liv-og-leven-pa-karia'
-                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                            >Liv og leven på Karia</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href='/utgivelser/dribble'
-                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                            >Dribble</a
-                        >
-                    </li>
-                </ul>
-            </section> -->
 
         <Prisliste />
     </main>

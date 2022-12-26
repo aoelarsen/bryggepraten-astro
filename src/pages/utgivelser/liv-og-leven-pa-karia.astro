@@ -1,16 +1,38 @@
 ---
+import { Image } from '@astrojs/image/components';
 import Layout from '../../layouts/Layout.astro';
+
+import kariaOmslag from '../../images/bokomslag/kariaOmslag.png';
 ---
 
 <Layout title='Liv og leven på Karia'>
     <main class='p-4 mx-auto max-w-2xl grid gap-8 mb-8'>
-        <h2>Liv og leven på Karia</h2>
+        <h2 class='text-xl md:text-3xl'>Liv og leven på Karia</h2>
+        <figure class='grid'>
+            <Image
+                format='png'
+                src={kariaOmslag}
+                alt='bokomslaget til Liv Og Leven På Karia'
+                class='place-self-center'
+            />
+        </figure>
+        <figure
+            class='md:w-1/2 p-2 justify-self-center border-slate-100 bg-white rounded-sm drop-shadow-lg'
+        >
+            <blockquote class='italic p-2 leading-loose'>
+                Der Strandgata begynner <br />
+                og Havnegata går på tvers, <br />
+                Der nede ligger «Karia» <br />
+                mitt barndoms univers
+            </blockquote>
+            <figcaption class='p-2'>
+                &hyphen; Øyvind Børresen, <cite>Liv og leven på Karia</cite>
+            </figcaption>
+        </figure>
         <p>
-            <span class='font-bold'>Pils, bayer og fløte</span> - Er et av 25 dikt som Øyvind Børresen
-            (f. 1956) har skrevet i sin nye bok: ”Liv og leven på Karia”. Diktene er observasjoner og
-            situasjoner fra hans oppvekst i Larvik. Med varme og innsikt forteller han om originale personer
-            og Karistranda eller Karia som han kaller det.
+            Øyvind Børresen (f.1956) er født i Larvik og vokste opp på Karistranda på Torstrand. I
+            diktform skriver han om minner fra barndommen på 1960-tallet. Med varme og innsikt
+            forteller han om originale personer og Karistranda eller Karia som han kaller det.
         </p>
-        <p>Bestill boka her.</p>
     </main>
 </Layout>
