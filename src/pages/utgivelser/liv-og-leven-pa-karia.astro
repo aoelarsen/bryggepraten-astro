@@ -3,6 +3,7 @@ import { Image } from '@astrojs/image/components';
 import Layout from '../../layouts/Layout.astro';
 
 import kariaOmslag from '../../images/bokomslag/kariaOmslag.png';
+import oyvind from '../../images/oyvind.png';
 ---
 
 <Layout title='Liv og leven på Karia'>
@@ -34,5 +35,13 @@ import kariaOmslag from '../../images/bokomslag/kariaOmslag.png';
             diktform skriver han om minner fra barndommen på 1960-tallet. Med varme og innsikt
             forteller han om originale personer og Karistranda eller Karia som han kaller det.
         </p>
+        <figure class='grid'>
+            <Image
+                format='png'
+                src={oyvind}
+                alt='illustrasjon av Øyvind Børresen'
+                class='place-self-center'
+            />
+        </figure>
     </main>
 </Layout>
