@@ -4,16 +4,14 @@ import ContactForm from '../components/ContactForm.astro';
 import { Image } from '@astrojs/image/components';
 
 import kontaktSketch from '../images/kontakt-oss-sketch.png';
+import hansen from '../images/H.png';
+import larsen from '../images/L.png';
 ---
 
 <Layout title='Kontakt Oss'>
-    <main
-        class='p-4 mx-auto max-w-2xl grid grid-cols-1 grid-rows-[repeat(4,minmax(90vh,min-content))] content-center place-content-center'
-    >
-        <section
-            class='grid place-content-center self-start fadeOut transition-all duration-1000 delay-75'
-        >
-            <h2 class='snap-y snap-mandatory'>Kontakt oss</h2>
+    <main class='p-4 mx-auto max-w-2xl grid gap-8'>
+        <section class='grid self-start'>
+            <h2 class='md:text-3xl'>Kontakt oss</h2>
             <figure>
                 <Image
                     format='png'
@@ -22,16 +20,14 @@ import kontaktSketch from '../images/kontakt-oss-sketch.png';
                     width='1024'
                     height='520'
                 />
-                <figcaption>
-                    <p>
-                        Forfattere er Jørund Holst-Hansen og Birger Dyve Larsen. De skriver alle
-                        tekster sammen og begge to tegner.
-                    </p>
+                <figcaption class='italic'>
+                    Forfattere er Jørund Holst-Hansen og Birger Dyve Larsen. De skriver alle tekster
+                    sammen og begge to tegner.
                 </figcaption>
             </figure>
         </section>
 
-        <section class='grid place-content-center fadeOut transition-all duration-1000 delay-100'>
+        <section class='grid py-8'>
             <h3 class='font-bold snap-y snap-mandatory'>Jørund Holst-Hansen</h3>
             <p>Har en helt egen nettside med mer skriblerier og han kan også kontaktes pr epost!</p>
             <ul class='list-disc list-inside'>
@@ -52,7 +48,7 @@ import kontaktSketch from '../images/kontakt-oss-sketch.png';
             </ul>
         </section>
 
-        <section class='grid place-content-center fadeOut transition-all duration-1000 delay-100'>
+        <section class='grid py-8'>
             <h3 class='font-bold snap-y snap-mandatory'>Birger Dyve Larsen</h3>
             <p>Har også mer skriblerier og sånn og kan kontaktes pr epost!</p>
             <ul class='list-disc list-inside'>
@@ -73,7 +69,7 @@ import kontaktSketch from '../images/kontakt-oss-sketch.png';
             </ul>
         </section>
 
-        <section class='grid place-content-center fadeOut transition-all duration-1000 delay-100'>
+        <section class='grid'>
             <h3 class='font-bold text-lg md:text-2xl snap-y snap-mandatory'>Kontaktskjema</h3>
             <ContactForm />
         </section>
