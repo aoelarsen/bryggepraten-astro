@@ -8,7 +8,7 @@ const Prisliste = () => {
     <section className='p-2 my-2 border border-slate-100 bg-white rounded-sm drop-shadow-lg grid'>
       <h3 className='text-xl'>Prisliste</h3>
       <div className='my-4'>
-        <h4 className='text-lg font-semibold'>Bøker av Bryggepraten</h4>
+        <h4 className='text-lg font-semibold'>Bryggepratens bøker</h4>
         <p className='p-0 mb-3 text-sm'>Av forfatterne Birger Dyve Larsen og Jørund Holst-Hansen</p>
         {booksBrygge ? booksBrygge.map(book => {return (
           <div className='w-full grid grid-cols-[1fr,auto]  hover:bg-slate-50 gap-y-4'>
