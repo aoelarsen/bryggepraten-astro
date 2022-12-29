@@ -9,7 +9,7 @@ import larsen from '../images/L.png';
 ---
 
 <Layout title='Kontakt Oss'>
-    <main class='p-4 mx-auto max-w-2xl grid gap-8'>
+    <main class='p-4 mx-auto max-w-2xl grid gap-12'>
         <section class='grid self-start'>
             <h2 class='md:text-3xl'>Kontakt oss</h2>
             <figure>
@@ -27,49 +27,62 @@ import larsen from '../images/L.png';
             </figure>
         </section>
 
-        <section class='grid py-8'>
-            <h3 class='font-bold snap-y snap-mandatory'>Jørund Holst-Hansen</h3>
-            <p>Har en helt egen nettside med mer skriblerier og han kan også kontaktes pr epost!</p>
-            <ul class='list-disc list-inside'>
-                <li>
-                    <a
-                        href='http://www.jhhnett.com/'
-                        class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                        >JØRUND hh - jhhnett.com</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href='email:holst.hansen1952@gmail.com'
-                        class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                        >holst.hansen1952@gmail.com</a
-                    >
-                </li>
-            </ul>
+        <section class='grid grid-cols-[60%,auto] md:grid-cols-2 py-8'>
+            <div class='self-center'>
+                <h3 class='text-lg font-bold snap-y snap-mandatory'>Jørund Holst-Hansen</h3>
+                <p>
+                    Har en helt egen nettside med mer skriblerier og han kan også kontaktes pr
+                    epost!
+                </p>
+                <ul class='md:list-disc list-inside'>
+                    <li>
+                        <a
+                            href='http://www.jhhnett.com/'
+                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+                            >jhhnett.com</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href='email:holst.hansen1952@gmail.com'
+                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+                            >holst.hansen1952@gmail.com</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <figure class='bg-clip-text md:block'>
+                <Image src={hansen} alt='Tegnig av Hansen' format='png' height='550' />
+            </figure>
+        </section>
+
+        <section class='grid grid-cols-[40%,auto] md:grid-cols-2 py-8'>
+            <figure class='bg-clip-text md:block'>
+                <Image src={larsen} alt='Tegnig av Larsen' format='png' height='550' />
+            </figure>
+            <div class='self-center'>
+                <h3 class='text-lg font-bold snap-y snap-mandatory'>Birger Dyve Larsen</h3>
+                <p>Har også mer skriblerier og sånn og kan kontaktes pr epost!</p>
+                <ul class='md:list-disc list-inside'>
+                    <li>
+                        <a
+                            href='https://baglerlarsen.net'
+                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+                            >Baglerlarsen.net</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href='email:birgerdl@yahoo.no'
+                            class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
+                            >birgerdl@yahoo.no</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class='grid py-8'>
-            <h3 class='font-bold snap-y snap-mandatory'>Birger Dyve Larsen</h3>
-            <p>Har også mer skriblerier og sånn og kan kontaktes pr epost!</p>
-            <ul class='list-disc list-inside'>
-                <li>
-                    <a
-                        href='https://baglerlarsen.net'
-                        class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                        >Baglerlarsen.net</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href='email:birgerdl@yahoo.no'
-                        class='underline text-indigo-800 hover:text-indigo-600 dark:text-indigo-100 dark:hover:text-indigo-300'
-                        >birgerdl@yahoo.no</a
-                    >
-                </li>
-            </ul>
-        </section>
-
-        <section class='grid'>
             <h3 class='font-bold text-lg md:text-2xl snap-y snap-mandatory'>Kontaktskjema</h3>
             <ContactForm />
         </section>
