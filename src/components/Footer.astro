@@ -2,8 +2,8 @@
 // import paBrygga from '../images/paa_brygga_v1.png';
 import bryggebenken from '../images/bryggebenken.png';
 import { Image } from '@astrojs/image/components';
-// const thisYear = new Date().getFullYear();
-import FooterYear from './thisYear.jsx';
+
+import ThisYear from './FooterYear.jsx';
 ---
 
 <footer
@@ -32,7 +32,7 @@ import FooterYear from './thisYear.jsx';
         </ul>
     </nav>
     <div class='py-2 col-span-3 w-full justify-self-center z-10 text-sm'>
-        <p><FooterYear client:load /> &copy; Bryggekanten Forlag</p>
+        <p><ThisYear client:load /> &copy; Bryggekanten Forlag</p>
         <p>
             Nettsiden er laget av <a href='https://aolar.no' class='underline hover:text-yellow-900'
                 >Aolar.no</a
